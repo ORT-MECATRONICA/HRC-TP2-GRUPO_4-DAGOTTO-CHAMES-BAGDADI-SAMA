@@ -86,8 +86,8 @@ void loop() {
       if (TiempoAhora - TiempoUltimoCambio >= INTERVALO) {
         TiempoUltimoCambio = millis();
 
-        char bufferTemperatura[5];
-        char bufferTiempo[5];
+        char bufferTemperatura[10];
+        char bufferTiempo[10];
         sprintf(bufferTiempo, "%s", timeActual);
         sprintf(bufferTemperatura, "%.2f", temperatura);
 
